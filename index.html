@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Reddit - Drive into anything</title>
+    <link rel="icon" type="image/x-icon" href="./mainlogo.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/output.css">
+
+</head>
+<body class="w-full bg-[#0b1416]">
+ <!--Navbar-->   
+<nav class="flex w-full pl-8 pt-2 text-white justify-between  pr-8 hover:cursor-pointer ">
+    <div class="flex  gap-48">
+
+        <div class="flex  gap-2 pt-1">
+            <div class="flex gap-2">
+                <div class=""><img class="w-8" src="./mainlogo.svg" alt=""></div>
+                <div class="pt-1 text-white">
+                   <svg class="h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 149" style="color: var(--shreddit-color-wordmark)">
+                       <g style="fill: currentColor">
+                         <path d="m71.62,45.92l-12.01,28.56c-1.51-.76-5.11-1.61-8.51-1.61s-6.81.85-10.12,2.46c-6.53,3.31-11.35,9.93-11.35,19.48v52.3H-.26V45.35h29.04v14.28h.57c6.81-9.08,17.21-15.79,30.74-15.79,4.92,0,9.65.95,11.54,2.08Z"></path>
+                         <path d="m65.84,96.52c0-29.41,20.15-52.68,50.32-52.68,27.33,0,46.91,19.96,46.91,48.05,0,4.92-.47,9.55-1.51,14h-68.48c3.12,10.69,12.39,19.01,26.29,19.01,7.66,0,18.54-2.74,24.4-7.28l9.27,22.32c-8.61,5.86-21.75,8.7-33.29,8.7-32.25,0-53.91-20.81-53.91-52.11Zm26.67-9.36h43.03c0-13.05-8.89-19.96-19.77-19.96-12.3,0-20.62,7.94-23.27,19.96Z"></path>
+                         <path d="m419.53-.37c10.03,0,18.25,8.23,18.25,18.25s-8.23,18.25-18.25,18.25-18.25-8.23-18.25-18.25S409.51-.37,419.53-.37Zm14.94,147.49h-29.89V45.35h29.89v101.77Z"></path>
+                         <path d="m246,1.47l-.09,53.53h-.57c-8.23-7.85-17.12-11.07-28.75-11.07-28.66,0-47.67,23.08-47.67,52.3s17.78,52.4,46.72,52.4c12.11,0,23.55-4.16,30.93-13.62h.85v12.11h28.47V1.47h-29.89Zm1.42,121.39h-.99l-6.67-6.93c-4.34,4.33-10.28,6.93-17.22,6.93-14.64,0-24.88-11.58-24.88-26.6s10.24-26.6,24.88-26.6,24.88,11.58,24.88,26.6v26.6Z"></path>
+                         <path d="m360.15,1.47l-.09,53.53h-.57c-8.23-7.85-17.12-11.07-28.75-11.07-28.66,0-47.67,23.08-47.67,52.3s17.78,52.4,46.72,52.4c12.11,0,23.55-4.16,30.93-13.62h.85v12.11h28.47V1.47h-29.89Zm1.28,121.39h-.99l-6.67-6.93c-4.34,4.33-10.28,6.93-17.22,6.93-14.64,0-24.88-11.58-24.88-26.6s10.24-26.6,24.88-26.6,24.88,11.58,24.88,26.6v26.6Z"></path>
+                         <path d="m492.44,45.35h21.85v25.44h-21.85v76.33h-29.89v-76.33h-21.75v-25.44h21.75v-27.66h29.89v27.66Z"></path>
+                       </g>
+                     </svg>
+               </div>
+            
+            
+            
+            </div>
+            </div>
+            
+              <!-- searchbar -->
+                <div class=" flex  ">
+                  <div class="bg-[#1a282d]   h-10 rounded-l-full"><span class="  material-symbols-outlined pt-2 pl-2 pr-1 font-thin">
+                      search
+                    </span></div>
+                  <div><input class=" text-gray-300 bg-[#1a282d] w-30 rounded-r-full  outline-none border-l-0 pl-0 p-2 pr-[300%]"
+                      type="text" placeholder="Search Reddit"> </div>
+                </div>
+    </div>
+
+
+<div  class="flex gap-2 text-sm">
+ <div class="flex pt-2 bg-[#1a282d] p-2  rounded-full pl-3 pr-3 ">
+    <span class="material-symbols-outlined">
+        qr_code_scanner
+        </span> <h1 class="font-semibold pl-1 ">Get app</h1>
+ </div> 
+ <div class="bg-[#d93a00] p-2 pl-3 font-semibold pr-3 rounded-full "><h1>Log In</h1></div>
+ <div class="pt-2 hover:bg-[#1a282d] rounded-full ">
+    <span class="material-symbols-outlined pl-2  pr-2">
+        more_horiz
+        </span>
+ </div>
+
+</div>
+
+
+
+</nav>
+
+<!--Grey-Line-->
+<div class="bg-gray-800 w-full h-[1px] mt-2"></div>
+<!--Grey-Line-->
+
+<section class="w-full flex pl-16 pr-[60px] hover:cursor-pointer">
+ <div class="w-1/5 text-white pt-4 pr-2  ">
+
+<div class=" flex gap-3  hover:bg-[#1a282d] pl-4 pr-4 pt-2 pb-2 rounded-lg ">
+    <div>   
+        <svg rpl="" fill="currentColor" height="20" icon-name="home-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$0323647085$--><!--?lit$0323647085$--><path d="m17.71 8.549 1.244.832v8.523a1.05 1.05 0 0 1-1.052 1.046H12.73a.707.707 0 0 1-.708-.707v-4.507c0-.76-1.142-1.474-2.026-1.474-.884 0-2.026.714-2.026 1.474v4.507a.71.71 0 0 1-.703.707H2.098a1.046 1.046 0 0 1-1.052-1.043V9.381l1.244-.835v9.158h4.44v-3.968c0-1.533 1.758-2.72 3.27-2.72s3.27 1.187 3.27 2.72v3.968h4.44V8.549Zm2.04-1.784L10.646.655a1.12 1.12 0 0 0-1.28-.008L.25 6.765l.696 1.036L10 1.721l9.054 6.08.696-1.036Z"></path><!--?--> 
+        </svg></div>
+        <div>Home</div>
+    </div>
+ <div class="flex gap-3 bg-[#1a282d] pl-4 pr-4 pt-2 pb-2 rounded-lg">
+    <div>   
+        <svg rpl="" fill="currentColor" height="20" icon-name="popular-fill" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$0323647085$--><!--?lit$0323647085$--><path d="M10 0a10 10 0 1 0 10 10A10.01 10.01 0 0 0 10 0Zm4 13.791L10.812 10.6l-6.245 6.247a8.92 8.92 0 0 1-1.414-1.414L9.4 9.188 6.209 6h7.778l.013.638v7.153Z"></path><!--?--> </svg>
+    </div>
+        <div>Popular
+
+        </div>
+ 
+    </div>
+    <div class="bg-gray-800 w-[99%] h-[0.6px] rounded-xl pr-6 mt-3 pl-5 ">  </div>
+
+    <!--DropDown bar-->
+    <div class=" select-none">
+        <div id="dropdown-button" onclick="toggleDropdown()" class="hover:bg-[#1a282d] pl-4 pr-4 pt-3 pb-2 rounded-lg cursor-pointer flex justify-between mt-2 font-extralight text-sm text-gray-400">
+            RECENT
+            <img class="w-6 pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown-menu" class="rounded  text-black  top-[50px]  text-sm hidden">
+            <div class="cursor-pointer p-1 text-white hover:bg-[#1a282d] rounded   flex pl-3 gap-2">
+                <div><img class="w-[30px]" src="https://styles.redditmedia.com/t5_2qhvf/styles/communityIcon_pulpp8crshh91.png" alt=""></div> 
+                <div class="pt-1 pb-1"><h1>r/bangalore</h1></div> 
+                </div>
+            
+        </div>
+    </div>
+    <div class="bg-gray-800 w-[99%] h-[0.6px] rounded-xl pr-6 mt-3 pl-5 "> </div>
+    <div class=" select-none mb-2">
+        <div id="dropdown-button" onclick="toggleDropdown1()" class="hover:bg-[#1a282d] pl-4 pr-4 pt-3 pb-2 rounded-lg cursor-pointer flex justify-between mt-2 font-extralight text-sm text-gray-400">
+            TOPICS
+            <img class="w-6 pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown1-menu" class="rounded  text-black  top-[50px]  text-sm  hidden">
+            <div class="cursor-pointer p-1 text-white  rounded   flex pl-3 gap-2">
+              <div class="flex flex-col">
+                <div class="flex  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+                    <div class="w-[30px]">
+                        <svg rpl="" fill="currentColor" height="20" icon-name="topic-videogaming-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.929 14.17 18.277 6.6a4.631 4.631 0 0 0-4.52-3.6H5.702a4.623 4.623 0 0 0-4.58 3.908L.034 14.387a3.134 3.134 0 0 0 .735 2.5 3.227 3.227 0 0 0 5.553-1.284l.39-1.635h5.794l.39 1.635A3.2 3.2 0 0 0 16.01 18h.782a3.211 3.211 0 0 0 3.123-2.444c.109-.455.114-.929.015-1.386Zm-1.6 1.85a1.964 1.964 0 0 1-1.54.73h-.781a1.947 1.947 0 0 1-1.9-1.453l-.63-2.476H5.74L5.11 15.3a1.947 1.947 0 0 1-1.9 1.453 1.974 1.974 0 0 1-1.5-.678 1.862 1.862 0 0 1-.443-1.506l1.09-7.481A3.366 3.366 0 0 1 5.7 4.25h8.062a3.373 3.373 0 0 1 3.3 2.614l1.65 7.573a1.877 1.877 0 0 1-.383 1.583h-.001Z"></path><path d="M6.256 6.212h-1.25v1.776h-1.73v1.25h1.73v1.622h1.25V9.238h1.73v-1.25h-1.73V6.212Z"></path><path d="M11.82 8.81a1 1 0 1 0 1.71.71 1.001 1.001 0 0 0-.3-.71 1.034 1.034 0 0 0-1.41 0Z"></path><path d="M15.23 6.85a.875.875 0 0 0-.32-.22c-.246-.1-.522-.1-.77 0a.875.875 0 0 0-.32.22.975.975 0 0 0 0 1.41 1 1 0 0 0 1.41 0 1.03 1.03 0 0 0 .22-1.09.877.877 0 0 0-.22-.32Z"></path>
+                          </svg>
+
+                    </div> 
+                <div class=" pb-1"><h1>Gaming</h1></div>
+                
+             </div> 
+
+             <div class="flex mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+                <div class="w-[30px]">
+                    <svg rpl="" fill="currentColor" height="20" icon-name="topic-sports-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0ZM4.124 16.465l1.259-3.007a9.906 9.906 0 0 0 .261-6.964l-1.186.4a8.656 8.656 0 0 1-.228 6.087l-1.046 2.5a8.75 8.75 0 1 1 13.632 0l-1.046-2.5a8.653 8.653 0 0 1-.228-6.086l-1.186-.4a9.906 9.906 0 0 0 .261 6.964l1.259 3.007a8.7 8.7 0 0 1-11.752-.001Z"></path>
+                      </svg>
+
+                </div> 
+            <div class=" pb-1"><h1>Sports</h1></div>
+            
+         </div> 
+           
+         <div class="flex  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+            <div class="w-[30px]">
+                <svg rpl="" fill="currentColor" height="20" icon-name="topic-business-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.25 19H1v-4.5h1.25V19Zm4-7H5v7h1.25v-7Zm8 0H13v7h1.25v-7Zm4-5H17v12h1.25V7ZM6 7.557l3.206 3.2a1.126 1.126 0 0 0 1.59 0l8.647-8.646-.884-.884L10 9.79l-3.2-3.2a1.153 1.153 0 0 0-1.59 0L.559 11.231l.884.884L6 7.557Zm4.25 6.943H9V19h1.25v-4.5Z"></path>
+                  </svg>
+
+            </div> 
+        <div class=" pb-1"><h1>Business</h1></div>
+        
+     </div> 
+     <div class="flex  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+        <div class="w-[26px]">
+            <svg rpl="" fill="currentColor" height="20" icon-name="topic-crypto-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.66 14H8.34a1.126 1.126 0 0 1-.974-.562l-1.8-3.125a.623.623 0 0 1 0-.625l1.8-3.125A1.125 1.125 0 0 1 8.34 6h3.32a1.125 1.125 0 0 1 .974.563l1.8 3.125a.623.623 0 0 1 0 .625l-1.8 3.125a1.127 1.127 0 0 1-.974.562Zm-3.247-1.25h3.174L13.175 10l-1.588-2.75H8.413L6.825 10l1.588 2.75Zm-3.93-4.312 1.443-2.5a1.13 1.13 0 0 0 0-1.125l-1.9-3.292-1.083.625 1.864 3.229-1.37 2.375H.4V9h3.1a1.126 1.126 0 0 0 .982-.562Zm1.443 6.75a1.13 1.13 0 0 0 0-1.125l-1.444-2.5A1.125 1.125 0 0 0 3.508 11H.4v1.25h3.036l1.371 2.375-1.864 3.229 1.083.625 1.9-3.291ZM19.6 7.75h-3.036l-1.37-2.375 1.863-3.229-1.083-.625-1.9 3.292a1.13 1.13 0 0 0 0 1.125l1.444 2.5a1.126 1.126 0 0 0 .974.562h3.1l.008-1.25Zm-2.539 10.1-1.864-3.229 1.371-2.375H19.6V11h-3.1a1.125 1.125 0 0 0-.974.563l-1.444 2.5a1.13 1.13 0 0 0 0 1.125l1.9 3.291 1.08-.629Z"></path>
+              </svg>
+
+        </div> 
+    <div class="pb-1"><h1>Crypto</h1></div>
+    
+ </div> 
+ <div class="flex   mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+    <div class="w-[26px]">
+        <svg rpl="" fill="currentColor" height="20" icon-name="topic-television-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.375 15h-4.75A2.63 2.63 0 0 1 3 12.375v-4.75A2.629 2.629 0 0 1 5.625 5h4.75A2.63 2.63 0 0 1 13 7.625v4.75A2.63 2.63 0 0 1 10.375 15Zm-4.75-8.75A1.377 1.377 0 0 0 4.25 7.625v4.75a1.377 1.377 0 0 0 1.375 1.375h4.75a1.377 1.377 0 0 0 1.375-1.375v-4.75a1.377 1.377 0 0 0-1.375-1.375h-4.75ZM16.29 7.33c.19-.188.297-.443.3-.71a1.224 1.224 0 0 0-.02-.19.602.602 0 0 0-.06-.19.557.557 0 0 0-.09-.17 1.01 1.01 0 0 0-.13-.16 1.02 1.02 0 0 0-1.08-.21.933.933 0 0 0-.33.21.61.61 0 0 0-.12.16.95.95 0 0 0-.1.17c-.023.062-.04.125-.05.19a1.007 1.007 0 0 0 .27.9.933.933 0 0 0 .33.21.838.838 0 0 0 .38.08 1.01 1.01 0 0 0 .7-.29Zm-.51 3.27c.066-.01.13-.03.19-.06a.557.557 0 0 0 .17-.09 1.017 1.017 0 0 0 .45-.83 1.224 1.224 0 0 0-.02-.19.602.602 0 0 0-.06-.19.557.557 0 0 0-.09-.17 1.01 1.01 0 0 0-.13-.16 1.02 1.02 0 0 0-1.08-.21.933.933 0 0 0-.33.21.61.61 0 0 0-.12.16.95.95 0 0 0-.1.17c-.023.062-.04.125-.05.19a1.007 1.007 0 0 0 .27.9c.192.183.445.286.71.29.064-.002.127-.008.19-.02Zm2.6 7.4H1.625A1.627 1.627 0 0 1 0 16.375V3.625A1.627 1.627 0 0 1 1.625 2h16.75A1.627 1.627 0 0 1 20 3.625v12.75A1.627 1.627 0 0 1 18.375 18h.005ZM1.625 3.25a.375.375 0 0 0-.375.375v12.75a.375.375 0 0 0 .375.375h16.75a.375.375 0 0 0 .375-.375V3.625a.375.375 0 0 0-.375-.375H1.625Z"></path>
+          </svg>
+    </div> 
+<div class=" pb-1"><h1>Television</h1></div>
+
+</div> 
+<div class="flex  hover:bg-[#1a282d] pr-32 p-1 rounded">
+    <div class="w-[30px]">
+        <svg rpl="" fill="currentColor" height="20" icon-name="topic-celebrity-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 13.979a3.003 3.003 0 0 1-2.772-1.85 2.993 2.993 0 0 1 2.187-4.086 3.004 3.004 0 0 1 3.08 1.274 2.994 2.994 0 0 1-.373 3.784A3.003 3.003 0 0 1 10 13.98Zm0-4.745a1.752 1.752 0 0 0-1.617 1.08 1.746 1.746 0 0 0 1.275 2.383 1.752 1.752 0 0 0 2.092-1.715A1.748 1.748 0 0 0 10 9.234ZM15.5 19.497c-.15 0-.3-.03-.438-.09L10 17.235l-5.063 2.172a1.103 1.103 0 0 1-1.447-.555 1.097 1.097 0 0 1-.092-.558l.512-5.456L.274 8.724a1.098 1.098 0 0 1 .588-1.798l5.377-1.199 2.813-4.719a1.14 1.14 0 0 1 1.9 0l2.809 4.713 5.378 1.199a1.1 1.1 0 0 1 .838 1.294c-.038.187-.125.36-.25.504l-3.64 4.114.51 5.455a1.097 1.097 0 0 1-1.1 1.204l.004.006ZM10 15.977c.15 0 .298.03.436.088l4.894 2.097-.494-5.272a1.099 1.099 0 0 1 .27-.829l3.515-3.975-5.194-1.16a1.101 1.101 0 0 1-.71-.515L10 1.858 7.28 6.414a1.1 1.1 0 0 1-.707.512L1.38 8.086l3.515 3.975a1.098 1.098 0 0 1 .27.832l-.494 5.27 4.894-2.098c.138-.059.286-.089.436-.088Z"></path>
+          </svg>
+
+    </div> 
+<div class="pb-1"><h1>Celebrity</h1></div>
+
+</div> <div class="rounded-full "><H1 class="font-medium pt-3">see more</H1></div>
+                </div>
+            
+        </div>
+    </div>
+
+    </div>
+    <div class="bg-gray-800 w-[99%] h-[0.6px] rounded-xl mt-3 pl-5 "> </div>
+    <div class=" select-none mb-2">
+        <div id="dropdown-button" onclick="toggleDropdown2()" class="hover:bg-[#1a282d] pl-4 pr-4 pt-3 pb-2 rounded-lg cursor-pointer flex justify-between mt-2 font-extralight text-sm text-gray-400">
+            RESOURCES
+            <img class="w-6 pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown2-menu" class="rounded  text-black  top-[50px]  text-sm hidden">
+            <div class="cursor-pointer p-1 text-white  rounded   flex pl-3 gap-2">
+              <div class="flex flex-col">
+                <div class="flex  mb-1 hover:bg-[#1a282d]  p-1 rounded">
+                    <div class="w-[30px] font-bold">
+                        <svg rpl="" fill="currentColor" height="20" icon-name="admin-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.938 9.211a3.25 3.25 0 0 0-3.177-2.642c-.45 0-.895.102-1.3.3a10.812 10.812 0 0 0-4.838-1.379l.81-3.741 2.444.519a1.492 1.492 0 1 0 .2-1.235L11.572.5a1.13 1.13 0 0 0-1.333.862L9.343 5.5a10.77 10.77 0 0 0-4.791 1.357 3.214 3.214 0 0 0-1.315-.289A3.248 3.248 0 0 0 .064 9.2c-.079.4-.085.812-.018 1.214a3.23 3.23 0 0 0 .912 1.754l.066.071v.127c.076 3.69 4.013 6.582 8.975 6.582 4.961 0 8.89-2.889 8.965-6.567l.006-.138.044-.046a3.252 3.252 0 0 0 .939-1.778c.067-.4.062-.81-.015-1.208Zm-1.221 1c-.075.42-.282.805-.59 1.1l-.392.407-.024.625c-.061 3-3.45 5.354-7.716 5.354-4.267 0-7.66-2.353-7.717-5.371l-.024-.6-.4-.433c-.3-.293-.5-.674-.571-1.087a2.138 2.138 0 0 1 .012-.765 2 2 0 0 1 1.942-1.623c.353.003.698.102 1 .286l.337.216.334-.22a9.435 9.435 0 0 1 4.758-1.381h.719a9.427 9.427 0 0 1 4.726 1.4l.347.225.343-.232a1.7 1.7 0 0 1 .96-.3 2 2 0 0 1 1.949 1.629c.049.253.051.512.007.766v.004Z"></path>
+                          </svg>
+
+                    </div> 
+                <div class="pt-[0.1rem] pb-1"><h1>About Reddit</h1></div>
+                
+             </div> 
+
+             <div class="flex  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+                <div class="w-[30px]">
+                    <svg rpl="" fill="currentColor" height="20" icon-name="topic-activism-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.175 13.11c-.237.462-.428.6-.514.627l-.133-.035c-.439-.238-1.278-2.03-1.278-5.2 0-2.95.729-4.718 1.184-5.144l.245-.087c.095.042.276.192.5.62l.284.556 1.113-.57-.285-.556c-.541-1.057-1.17-1.3-1.618-1.316h-.044a1.4 1.4 0 0 0-.754.23L3.7 5.852c-.915-.552-1.847-.991-2.61-.58C.237 5.735.044 6.98 0 9c.047 2 .24 3.245 1.093 3.7.783.423 1.754-.06 2.7-.637.288.1.685.218 1.224.37v4.347a1.122 1.122 0 0 0 1.121 1.12h2.75a1.123 1.123 0 0 0 1.122-1.12v-3l4.028 1.075c.183.088.384.134.587.135.45 0 1.1-.23 1.661-1.32l.285-.555-1.113-.57-.283.566Zm-11.882-2.2c-1.247.782-1.546.734-1.607.7C1.6 11.56 1.3 11.229 1.25 9c.049-2.25.345-2.582.434-2.63.064-.033.361-.081 1.61.7a.624.624 0 0 0 .54.058l8.838-3.146A13.9 13.9 0 0 0 12 8.5c-.034 1.608.221 3.21.754 4.728L3.79 10.834a.622.622 0 0 0-.497.073v.004Zm2.97 5.753v-3.877c.678.184 1.507.405 2.5.67v3.2l-2.5.007ZM19.25 8v1.25H16V8h3.25Zm-3.477-2.674 2.82-1.594.615 1.088-2.819 1.594-.616-1.088Zm.616 5.26 2.819 1.594-.615 1.088-2.82-1.594.616-1.088Z"></path>
+                      </svg>
+                </div> 
+            <div class=" pb-1"><h1>Advertise</h1></div>
+            
+         </div> 
+           
+         <div class="flex gap-2  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+            <div class="w-[26px]">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="10" stroke="#ffff" stroke-width="1.5"></circle> <path d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13" stroke="#ffff" stroke-width="1.5" stroke-linecap="round"></path> <circle cx="12" cy="16" r="1" fill="#ffff"></circle> </g></svg>
+
+            </div> 
+        <div class="pt-[0.1rem] pb-1"><h1>Help</h1></div>
+        
+     </div> 
+     <div class="flex gap-2 mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+        <div class="w-[26px]">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20" stroke="#ffffff" stroke-width="1.296" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
+        </div> 
+    <div class="pt-[0.1rem] pb-1"><h1>Blog</h1></div>
+    
+ </div> 
+ <div class="flex  mb-1 hover:bg-[#1a282d] pr-32 p-1 rounded">
+    <div class="w-[30px]">
+        <svg rpl="" fill="currentColor" height="20" icon-name="topic-careers-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.784 12.331a7 7 0 0 0 1.165.6l-6.174 6.178a2.747 2.747 0 0 1-3.883-3.884l6.18-6.181c.162.409.362.8.6 1.171l-5.897 5.894a1.5 1.5 0 0 0 0 2.116 1.533 1.533 0 0 0 2.118 0l5.891-5.894Zm4.481-.309a5.7 5.7 0 0 0 4.671-3.953 5.372 5.372 0 0 0-.1-3.538 1.116 1.116 0 0 0-.813-.7 1.127 1.127 0 0 0-1.039.305L14.118 7A.807.807 0 0 1 13 7a.79.79 0 0 1 0-1.116l2.864-2.863a1.127 1.127 0 0 0 .3-1.04 1.112 1.112 0 0 0-.7-.812 5.363 5.363 0 0 0-3.539-.1 5.7 5.7 0 0 0-3.946 4.666 5.627 5.627 0 0 0 6.287 6.287Zm.58-9.75L12.117 5a2.043 2.043 0 0 0 0 2.884 2.088 2.088 0 0 0 2.883 0l2.727-2.726c.271.825.276 1.714.013 2.542a4.432 4.432 0 0 1-3.628 3.079A4.377 4.377 0 0 1 9.22 5.887a4.429 4.429 0 0 1 4.342-3.822c.437 0 .87.07 1.284.207Z"></path>
+          </svg>
+    </div> 
+<div class="pt-1 pb-1"><h1>Careers</h1></div>
+
+</div> 
+<div class="flex  hover:bg-[#1a282d] pr-32 p-1 rounded">
+    <div class="w-[30px]">
+        <svg rpl="" fill="currentColor" height="20" icon-name="author-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.128 0a4.78 4.78 0 0 0-4.774 4.774c.007.214.029.427.065.638l-.137-.138a1.143 1.143 0 0 0-1.719.126L.461 16.2a2.315 2.315 0 0 0 3.241 3.24l10.8-8.1a1.14 1.14 0 0 0 .122-1.718l-.138-.138c.212.036.426.058.64.065a4.773 4.773 0 1 0 0-9.547L15.128 0ZM2.955 18.445a1.07 1.07 0 0 1-1.5-1.5L9.487 6.239l4.175 4.176-10.707 8.03ZM15.128 8.3a3.53 3.53 0 1 1 0-7.06 3.53 3.53 0 0 1 0 7.06Zm-7.186 2.78L10.018 9l.88.88-2.077 2.08-.879-.88Z"></path>
+          </svg>
+
+    </div> 
+<div class=" pb-1"><h1>Press</h1></div>
+
+</div> 
+<div class="rounded-full "><H1 class="font-medium pt-3">see more</H1></div>
+                </div>
+            
+        </div></div>
+    </div>
+
+    <div class=" select-none mb-2">
+        <div id="dropdown-button" onclick="toggleDropdown3()" class="hover:bg-[#1a282d] pl-4 pr-4 pt-3 pb-2 rounded-lg cursor-pointer flex justify-between mt-2 font-extralight text-sm text-gray-400">
+            POPULAR POSTS
+            <img class="w-6 pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown3-menu" class="rounded  text-black  top-[50px]  text-sm hidden ">
+            <div class="cursor-pointer p-1 text-white  rounded   flex pl-3 gap-2">
+              <div class="flex flex-col">
+                <div class="flex  p-1 pt-2  pr-24 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>English / Global</h1></div>
+                
+             </div> 
+
+             <div class="flex  p-1 pt-2  pr-28 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>Deutsch</h1></div>
+                
+             </div>  
+           
+             <div class="flex  p-1 pt-2  pr-28 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>Espanol</h1></div>
+                
+             </div> 
+             <div class="flex  p-1 pt-2  pr-28 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>Francais</h1></div>
+                
+             </div> 
+             <div class="flex  p-1 pt-2  pr-28 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>Italiano</h1></div>
+                
+             </div> 
+             <div class="flex  p-1 pt-2  pr-28 mb-1 hover:bg-[#1a282d]  rounded">
+                    
+                <div class=" pb-1 "><h1>portugues</h1></div>
+                
+             </div> 
+<div class="rounded-full "><H1 class="font-medium pt-3">see more</H1></div>
+                </div>
+            
+        </div></div>
+    </div>
+        
+    <h1 class="text-[62%] mt-64 pt-2 font-medium pr-2 text-gray-400">Reddit, Inc. © 2024. All rights reserved.</h1>
+</div>
+
+
+ </div>
+ <!--Middle Line-->
+ <div class="bg-gray-800 flex flex-col w-[1px] h-[2000px] "></div>
+
+ <!--2ndpart-->
+ 
+ <div class=" w-full mb-0 ">
+
+    <div class="w-full flex gap-3 p-4 ml-1   ">
+
+        <!-- card -->
+    
+        <div class="w-1/2 relative rounded-2xl  h-[200px]">
+            <video class="w-full h-full object-cover rounded-2xl" src="https://packaged-media.redd.it/vvv2tx2kfggc1/pb/m2-res_1080p.mp4?m=DASHPlaylist.mpd&v=1&e=1707048000&s=14c4f0d56d10b64dfaaf25edc022b93517593549#t=0"></video>
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-30">
+                <div class="text-white mb-24">
+                    <h1 class="text-2xl pl-2 font-bold pt-48">NHL ALL-star Game</h1>
+                    <h2 class="text-[13px] text-white font-normal pl-3 ">Mathews wins the 2024 AG MVPP award</h2>
+                    <div class="flex items-center pt-3 pl-2">
+                        <img class="w-[25px] rounded-full" src="https://styles.redditmedia.com/t5_2qiel/styles/communityIcon_u908dyy72nkb1.jpg?format=pjpg&s=50078089a0d5dce6d45abdd29a8881af068e5e23" alt="" class="w-8 h-8 rounded-full">
+                        <h3 class="ml-2 font-bold text-xs">r/hockey</h3>
+                        <p class="pl-1 text-gray-300 text-xs font-thin">and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+          <!-- card -->
+    
+          <div class="w-1/2 relative rounded-2xl  h-[200px]">
+            <img class="w-full h-full object-cover rounded-2xl" src="https://www.digitaltrends.com/wp-content/uploads/2023/12/vision-pro.jpg?resize=625%2C417&p=1">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  bg-black bg-opacity-20">
+                <div class="text-white mb-24">
+                    <h1 class="text-2xl pl-2 font-bold pt-48">Vision Pro reactions</h1>
+                    <h2 class="text-[13px] text-white font-normal pl-3 ">Working in the vision Pro</h2>
+                    <div class="flex items-center pt-3 pl-2">
+                        <img class="w-[25px] rounded-full" src="https://styles.redditmedia.com/t5_8j837i/styles/communityIcon_nvv8j1jp384b1.png" alt="" class="w-8 h-8 rounded-full">
+                        <h3 class="ml-2 font-bold text-xs">r/VisionPro</h3>
+                        <p class="pl-1 text-gray-300 text-xs font-thin">and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+          <!-- card -->
+    
+          <div class="w-1/2 relative rounded-2xl  h-[200px]">
+            <img class="w-full h-full object-cover rounded-2xl" src="./dwd.png">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-20">
+                <div class="text-white mb-24">
+                    <h1 class="text-[22.7px] pl-2 font-bold pt-48">Westbrook sets record</h1>
+                    <h2 class="text-[13px] text-white font-normal pl-3 ">[highlight] Zubac holds Russ still for the...</h2>
+                    <div class="flex items-center pt-3 pl-2">
+                        <img class="w-[25px] rounded-full" src="https://b.thumbs.redditmedia.com/lh3XYdayDnfF474A_Ro9fBWUViOibSr4BoTpx0ETyvg.png" alt="" class="w-8 h-8 rounded-full">
+                        <h3 class="ml-2 font-bold text-xs">r/nba</h3>
+                        <p class="pl-1 text-gray-300 text-xs font-thin">and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+          <!-- card -->
+    
+          <div class="w-1/3 relative rounded-l-xl h-[200px] ">
+            <img class="w-full h-full object-cover rounded-l-2xl" src="https://guardian.ng/wp-content/uploads/2020/02/Premier-League-football.jpg">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-15">
+                <div class="text-white mb-24">
+                    <h1 class="text-2xl pl-2 font-bold pt-48">Premier League</h1>
+                    <h2 class="text-[13px] text-white font-normal pl-3 ">Match Thread:Everton vs Totte</h2>
+                    <div class="flex items-center pt-3 pl-2">
+                        <img class="w-[25px] rounded-full" src="https://styles.redditmedia.com/t5_2qi58/styles/communityIcon_fihq6rzyq7q91.png" alt="" class="w-8 h-8 rounded-full">
+                        <h3 class="ml-2 font-bold text-xs">r/soccer</h3>
+                        <p class="pl-1 text-gray-300 text-xs font-thin">and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+ <section class="icon text-gray-400 flex text-xs ml-6 gap-4 font-semibold  ">
+<div class="w-full  flex relative z-50">
+       <!--Hot-->
+       <div class=" select-none    ">
+        <div id="dropdown-button" onclick="toggleDropdown4()" class= " flex   gap-1 pl-3  rounded-full  hover:bg-[#1a282d]   cursor-pointer  font-semibold text-sm text-gray-400">
+            Hot
+            <img class="w-[17px] pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown4-menu" class="  text-black  top-[50px]  text-sm pl-2 bg-[#172024]  hidden ">
+            <div class=" flex gap-2 cursor-pointer p-1 text-white hover:bg-[#1a282d] rounded  ">
+                <div class="pt-1 pb-1"><h1>Sort by</h1></div> 
+                </div>
+                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                    <div class="pt-1 pb-1"><h1>Best</h1></div> 
+                    </div>
+                    <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                        <div class="pt-1 pb-1"><h1>Hot</h1></div> 
+                        </div>
+                        <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                            <div class="pt-1 pb-1"><h1>New</h1></div> 
+                            </div>
+                            <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                <div class="pt-1 pb-1"><h1>Top</h1></div> 
+                                </div>
+                                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                    <div class="pt-1 pb-1"><h1>Rising</h1></div> 
+                                    </div>
+                    
+            
+        </div>
+    </div>
+   
+    <!--Inida-->
+    <div class=" select-none  ">
+        <div id="dropdown-button" onclick="toggleDropdown5()" class= " flex   gap-1 pl-3  rounded-full  hover:bg-[#1a282d]  cursor-pointer  font-semibold  text-sm text-gray-400 ">
+            India
+            <img class="w-[17px] pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown5-menu" class="  text-black  top-[50px]  text-sm pl-2 bg-[#172024]  hidden ">
+            <div class=" flex gap-2 cursor-pointer p-1 text-white hover:bg-[#1a282d] rounded  ">
+                <div class="pt-1 pb-1"><h1>Sort by</h1></div> 
+                </div>
+                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                    <div class="pt-1 pb-1"><h1>Everywhere</h1></div> 
+                    </div>
+                    <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                        <div class="pt-1 pb-1"><h1>India</h1></div> 
+                        </div>
+                        <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                            <div class="pt-1 pb-1"><h1>United states</h1></div> 
+                            </div>
+                            <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                <div class="pt-1 pb-1"><h1>Argentina</h1></div> 
+                                </div>
+                                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                    <div class="pt-1 pb-1"><h1>Australia</h1></div> 
+                                    </div>
+                                    <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                        <div class="pt-1 pb-1"><h1>Bulgaria</h1></div> 
+                                        </div>
+                                        <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                            <div class="pt-1 pb-1"><h1>Canada</h1></div> 
+                                            </div>
+                                            <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                                <div class="pt-1 pb-1"><h1>Chile</h1></div> 
+                                                </div>
+                                                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+
+                                                    <div class="pt-1 pb-1"><h1>Colombia</h1></div> 
+                                                    </div>
+                    
+            
+        </div>
+    </div>
+
+     <!--blogcard-->
+     <div class=" select-none  ">
+        <div id="dropdown-button" onclick="toggleDropdown6()" class= " flex   gap-1 pl-3  rounded-full  hover:bg-[#1a282d]  cursor-pointer  font-semibold  text-sm text-gray-400 pt-[0.1rem] ">
+            <svg rpl="" fill="currentColor" height="16" icon-name="view-card-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.882 1H2.118A1.12 1.12 0 0 0 1 2.119v15.762A1.119 1.119 0 0 0 2.118 19h15.764A1.12 1.12 0 0 0 19 17.881V2.119A1.12 1.12 0 0 0 17.882 1Zm-.132 16.75H2.25v-7.138h15.5v7.138ZM2.25 9.362V2.25h15.5v7.112H2.25Z"></path>
+              </svg>
+            <img class="w-[17px] pt-[0.09rem]" src="./icons.svg" alt="">
+        </div>
+    
+        <div id="dropdown6-menu" class="  text-black  top-[50px]  text-sm pl-2 bg-[#172024] hidden  overflow-y-auto">
+            <div class=" flex gap-2 cursor-pointer p-1 text-white hover:bg-[#1a282d] rounded  ">
+                <div class="pt-1 pb-1"><h1>View</h1></div> 
+                </div>
+                <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+                <div class="mt-2"><svg rpl="" fill="currentColor" height="16" icon-name="view-card-fill" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 9H1V2.119A1.119 1.119 0 0 1 2.118 1h15.764A1.119 1.119 0 0 1 19 2.119V9ZM1 17.881A1.119 1.119 0 0 0 2.118 19h15.764A1.12 1.12 0 0 0 19 17.881V11H1v6.881Z"></path>
+                  </svg></div>
+                    <div class="pt-1 pb-1"><h1>Card</h1></div> 
+                    </div>
+                    <div class=" flex gap-2 cursor-pointer p-1 text-gray-400 font-normal hover:bg-[#1a282d] rounded  ">
+                        <div class="mt-2"> <svg rpl="" fill="currentColor" height="16" icon-name="view-classic-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.882 2H2.118A1.118 1.118 0 0 0 1 3.116v13.768A1.118 1.118 0 0 0 2.118 18h15.764A1.118 1.118 0 0 0 19 16.884V3.116A1.118 1.118 0 0 0 17.882 2ZM2.25 3.25h15.5V7H2.25V3.25Zm15.5 13.5H2.25v-3.5h15.5v3.5Zm0-4.75H2.25V8.25h15.5V12Z"></path>
+                          </svg></div>
+                            <div class="pt-1 pb-1"><h1>Classic</h1></div> 
+                            </div>
+                    
+            
+        </div>
+        
+    </div>
+  
+</div>
+<!--Grey-Line-->
+<div class=" absolute bg-gray-800 w-[717px] mt-9 h-[1px] "></div>
+<!--Grey-Line-->
+
+<div class="absolute  mt-11 justify-between  w-1/2 gap-2 pr-7 rounded-2xl ">
+
+
+<div class="  mr-2 rounded-2xl m-4 pb-1">
+    <div class="flex justify-between  mt-1 pt-2 pl-2  ">
+        <div class="flex gap-1 ">
+            <div ><img class="w-[25px] rounded-full" src="https://styles.redditmedia.com/t5_2dfnk0/styles/communityIcon_uli9r9wy5lba1.png" ></div>
+            <div class="pt-1">
+                r/developersIndia</div>
+            <div class="pt-1 text-gray-500 font-normal"> • 2 hr. ago</div>
+        
+        </div>
+        
+        <div class="flex gap-2">
+            <div><button class="bg-[#0045ac] pl-4 pt-2 pb-2 pr-4 rounded-full text-white">Join</button></div>
+            <div class=" p-2 bg-[#1a282d]   rounded-full">•••</div>
+        </div>
+    </div>
+    
+    <div class="pl-4 pr-4">
+        <div class="font-semibold mb-2 text-xl text-gray-400">My friend got a 120k USD job offer from US</div>
+        <div class="w-full flex justify-center text-sm rounded-xl font-normal mr-4"><p>We are in final year of B.Tech and my friend got a job offer of 120K USD from a company based in Kansas, US asking to fill an onboarding form (asking for passport and other details). There was an online assessment followed by 2 coding rounds (we help each other in coding rounds and spent hell of a time solving those questions) and a psychometric test. They said they are by passing his interviews since he did exceptionally well in all the rounds and gave him the offer lol. We got skeptical of this company, did research about them, their website was a complete bs and address mentioned there was of some empty land. Wanted to make others aware of such companies. Their website</p></video></div>
+    </div>
+    <div class="flex gap-7 pl-3 pt-2 text-white">
+        <div  class="flex gap-2  bg-[#283d44] p-2 rounded-full text-sm">
+          <div>
+            <svg class="mt-[0.2rem] " rpl="" fill="currentColor" height="16" icon-name="upvote-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M12.877 19H7.123A1.125 1.125 0 0 1 6 17.877V11H2.126a1.114 1.114 0 0 1-1.007-.7 1.249 1.249 0 0 1 .171-1.343L9.166.368a1.128 1.128 0 0 1 1.668.004l7.872 8.581a1.25 1.25 0 0 1 .176 1.348 1.113 1.113 0 0 1-1.005.7H14v6.877A1.125 1.125 0 0 1 12.877 19ZM7.25 17.75h5.5v-8h4.934L10 1.31 2.258 9.75H7.25v8ZM2.227 9.784l-.012.016c.01-.006.014-.01.012-.016Z"></path><!--?--> </svg>
+        </div>7.4k
+   <div> <svg class="mt-[0.2rem] " rpl="" fill="currentColor" height="16" icon-name="downvote-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M10 20a1.122 1.122 0 0 1-.834-.372l-7.872-8.581A1.251 1.251 0 0 1 1.118 9.7 1.114 1.114 0 0 1 2.123 9H6V2.123A1.125 1.125 0 0 1 7.123 1h5.754A1.125 1.125 0 0 1 14 2.123V9h3.874a1.114 1.114 0 0 1 1.007.7 1.25 1.25 0 0 1-.171 1.345l-7.876 8.589A1.128 1.128 0 0 1 10 20Zm-7.684-9.75L10 18.69l7.741-8.44H12.75v-8h-5.5v8H2.316Zm15.469-.05c-.01 0-.014.007-.012.013l.012-.013Z"></path><!--?--> </svg></div>
+
+        </div>
+        <div class="flex gap-2  bg-[#283d44]  p-2 rounded-full text-sm">
+            <svg rpl="" aria-hidden="true" class="icon-comment" fill="currentColor" height="20" icon-name="comment-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path><!--?--> </svg>1.4k
+        </div>
+        <div class="flex gap-2   bg-[#283d44] p-2 rounded-full text-sm">
+            <svg rpl="" aria-hidden="true" class="icon-share" fill="currentColor" height="20" icon-name="share-ios-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M19 11v5.378A2.625 2.625 0 0 1 16.378 19H3.622A2.625 2.625 0 0 1 1 16.378V11h1.25v5.378a1.373 1.373 0 0 0 1.372 1.372h12.756a1.373 1.373 0 0 0 1.372-1.372V11H19ZM9.375 3.009V14h1.25V3.009l2.933 2.933.884-.884-4-4a.624.624 0 0 0-.884 0l-4 4 .884.884 2.933-2.933Z"></path><!--?--> </svg>Share
+        </div>
+        
+    </div>
+    <!--Grey-Line-->
+<div class=" absolute bg-gray-800 w-[717px] z-50 mt-3 h-[1px] "></div>
+<!--Grey-Line-->
+</div>
+<div class=" bg-[#1a282d]  mr-2 rounded-2xl m-4 pb-1">
+    <div class="flex justify-between  mt-1 pt-2 pl-2  ">
+        <div class="flex gap-1 ">
+            <div ><img class="w-[25px] rounded-full" src="https://b.thumbs.redditmedia.com/b19-jQLBsVc2-EQfPx5WEQkYIL_clR0mhba4-pHT0AA.png" ></div>
+            <div class="pt-1">r/Damnthatsinteresting</div>
+            <div class="pt-1 text-gray-500 font-normal"> • 5 hr. ago</div>
+        
+        </div>
+        
+        <div class="flex gap-2">
+            <div><button class="bg-[#0045ac] pl-4 pt-2 pb-2 pr-4 rounded-full text-white">Join</button></div>
+            <div class=" p-2 hover:bg-[#1a282d]   rounded-full">•••</div>
+        </div>
+    </div>
+    
+    <div class="pl-4 pr-4">
+        <div class="font-semibold mb-2 text-xl text-white">This is the beginning</div>
+        <div class="w-full bg-black flex justify-center rounded-xl mr-4"><video class=" object-fill w-[400px] h-[600px]" src="./meta.mp4"></video></div>
+    </div>
+    <div class="flex gap-7 pl-6 pt-2 text-white">
+        <div  class="flex gap-2  bg-[#283d44] p-2 rounded-full text-sm">
+          <div>
+            <svg class="mt-[0.2rem] " rpl="" fill="currentColor" height="16" icon-name="upvote-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M12.877 19H7.123A1.125 1.125 0 0 1 6 17.877V11H2.126a1.114 1.114 0 0 1-1.007-.7 1.249 1.249 0 0 1 .171-1.343L9.166.368a1.128 1.128 0 0 1 1.668.004l7.872 8.581a1.25 1.25 0 0 1 .176 1.348 1.113 1.113 0 0 1-1.005.7H14v6.877A1.125 1.125 0 0 1 12.877 19ZM7.25 17.75h5.5v-8h4.934L10 1.31 2.258 9.75H7.25v8ZM2.227 9.784l-.012.016c.01-.006.014-.01.012-.016Z"></path><!--?--> </svg>
+        </div>7.4k
+   <div> <svg class="mt-[0.2rem] " rpl="" fill="currentColor" height="16" icon-name="downvote-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M10 20a1.122 1.122 0 0 1-.834-.372l-7.872-8.581A1.251 1.251 0 0 1 1.118 9.7 1.114 1.114 0 0 1 2.123 9H6V2.123A1.125 1.125 0 0 1 7.123 1h5.754A1.125 1.125 0 0 1 14 2.123V9h3.874a1.114 1.114 0 0 1 1.007.7 1.25 1.25 0 0 1-.171 1.345l-7.876 8.589A1.128 1.128 0 0 1 10 20Zm-7.684-9.75L10 18.69l7.741-8.44H12.75v-8h-5.5v8H2.316Zm15.469-.05c-.01 0-.014.007-.012.013l.012-.013Z"></path><!--?--> </svg></div>
+
+        </div>
+        <div class="flex gap-2  bg-[#283d44]  p-2 rounded-full text-sm">
+            <svg rpl="" aria-hidden="true" class="icon-comment" fill="currentColor" height="20" icon-name="comment-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path><!--?--> </svg>1.4k
+        </div>
+        <div class="flex gap-2   bg-[#283d44] p-2 rounded-full text-sm">
+            <svg rpl="" aria-hidden="true" class="icon-share" fill="currentColor" height="20" icon-name="share-ios-outline" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <!--?lit$354295123$--><!--?lit$354295123$--><path d="M19 11v5.378A2.625 2.625 0 0 1 16.378 19H3.622A2.625 2.625 0 0 1 1 16.378V11h1.25v5.378a1.373 1.373 0 0 0 1.372 1.372h12.756a1.373 1.373 0 0 0 1.372-1.372V11H19ZM9.375 3.009V14h1.25V3.009l2.933 2.933.884-.884-4-4a.624.624 0 0 0-.884 0l-4 4 .884.884 2.933-2.933Z"></path><!--?--> </svg>Share
+        </div>
+        
+    </div>
+    <!--Grey-Line-->
+<div class=" absolute bg-gray-800 w-[717px] z-50 mt-3 h-[1px] "></div>
+<!--Grey-Line-->
+</div>
+</div>
+
+
+
+
+
+<!--Pupular communities right side-->
+   <div class="w-1/2 bg-[#04090a] rounded-xl  ">
+    <h1 class="text-gray-500 text-xs pt-6 pl-4 pb-8">POPULAR COMMUNITIES</h1>
+
+    <div class="flex gap-2 pl-6 mb-6 text-gray-400">
+    <div><img class="w-8 rounded-full" src="https://styles.redditmedia.com/t5_2s30g/styles/communityIcon_wpxjh8fuvcw51.png" ></div>
+    <div class="">
+        <div class="text-sm font-normal">r/AskMen</div>
+        <div class="font-light">5,921,731 members</div>
+    </div>
+
+      </div>
+
+      <div class="flex gap-2 pl-6 mb-6 gray-400">
+        <div><img class="w-8 rounded-full" src="https://styles.redditmedia.com/t5_2vq0w/styles/communityIcon_9o8mqi4fd6h51.png" ></div>
+        <div class="">
+            <div class="text-sm font-normal">r/DestinyTheGame</div>
+            <div class="font-light">2,944,358 members</div>
+        </div>
+    
+          </div>
+        
+          <div class="flex gap-2 pl-6 mb-6 gray-400">
+            <div><img class="w-8 rounded-full" src="https://styles.redditmedia.com/t5_2rrlp/styles/communityIcon_06pablpo0le21.png" ></div>
+            <div class="">
+                <div class="text-sm font-normal">r/PS4</div>
+                <div class="font-light">5,244,358 members</div>
+            </div>
+        
+              </div>
+
+              <div class="flex gap-2 pl-6 mb-6">
+                <div><img class="w-8 rounded-full" src="https://styles.redditmedia.com/t5_2qh1f/styles/communityIcon_26udmxwqbrwb1.png" ></div>
+                <div class="">
+                    <div class="text-sm font-normal">r/apple</div>
+                    <div class="font-light">7,944,358 members</div>
+                </div>
+            
+                  </div>
+
+                  <div class="flex gap-2 pl-6 mb-3">
+                    <div><img class="w-8 rounded-full" src="https://styles.redditmedia.com/t5_2xbci/styles/communityIcon_32btum6062v91.png" ></div>
+                    <div class="">
+                        <div class="text-sm font-normal">r/xboxone
+
+                        </div>
+                        <div class="font-light">3,944,358 members</div>
+                    </div>
+                
+                      </div>
+              <p class="ml-6 mb-4  hover:bg-[#1a282d] rounded-full w-fit p-2">See more</p>
+
+
+   </div>
+<!--Pupular communities right side-->
+    
+ </section>
+
+
+
+ </div>
+
+
+</section>
+
+
+
+    <script src="script.js"></script>t
+</body>
+</html>
